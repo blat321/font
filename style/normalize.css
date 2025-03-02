@@ -1,0 +1,92 @@
+/* Убираем все отступы и границы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Наследуем шрифты для форм */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Улучшаем рендеринг шрифтов */
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+/* Делаем body на всю высоту экрана */
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+/* Убираем стандартное оформление у заголовков */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+/* Делаем списки без отступов и маркеров */
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Убираем подчёркивание у ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Делаем изображения адаптивными */
+img {
+    object-fit: contain;
+    height: auto;
+    display: block;
+}
+
+/* Убираем стандартные стили для кнопок */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Убираем стандартные стили для полей ввода */
+input, textarea {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+/* Обнуляем стили для таблиц */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Делаем блоки article, aside и другие блочными в старых браузерах */
+article, aside, footer, header, nav, section {
+    display: block;
+}
+
+/* Убираем стандартные отступы у iframe */
+iframe {
+    border: none;
+}
+
+/* Убираем фокусировку у кнопок и ссылок в мобильных браузерах */
+button, a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Минимальная высота textarea */
+textarea {
+    resize: vertical;
+}

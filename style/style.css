@@ -1,0 +1,543 @@
+/* Глобальные стили */
+body {
+    background: linear-gradient(180deg, #191919 0%, #262626 17.27%, #191919 35%), #191919;
+    color: var(--color-white);
+    font-family: "EB Garamond";
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 136px;
+}
+
+/* Универсальные классы */
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.block-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.block-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 130%;
+    border-bottom: 1px solid #434343;
+    padding-bottom: 4px;
+}
+
+.block-text:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.red {
+    color: var(--color-red);
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.ff-cormorant {
+    font-family: 'Cormorant', sans-serif;
+}
+
+.ff-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.ff-helvetica {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.ff-gill-sans {
+    font-family: 'Gill Sans MT', sans-serif;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+/* Вводный блок */
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Gg {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.type {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 100%;
+    opacity: 0.7;
+}
+
+.info-text {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.44px;
+    width: 420px;
+}
+
+.heading-block {
+    text-align: center;
+}
+
+.heading-block > h1 {
+    font-size: 200px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.heading-block>h2 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.secondary-text {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52.2px;
+    color: #BABABA;
+    margin-bottom: 12px;
+    align-self: flex-end;
+}
+
+.letter {
+    font-size: 160px;
+    font-weight: 700;
+    line-height: 160px;
+}
+
+.info-semiBold-text {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.4px;
+    width: 420px;
+    margin-bottom: 19px;
+    align-self: flex-end;
+}
+
+/* История шрифта */
+
+.history-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 76.9px;
+}
+
+.history-block img {
+    width: 363px;
+}
+
+.history {
+    width: 734px;
+}
+
+.history>h2 {
+    margin-top: 18px;
+}
+
+/* Гарнитура шрифта */
+
+.typeface-block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.typeface {
+    width: 565px;
+}
+
+.typeface-decoration {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.typeface-decoration > h2 {
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.94px;
+}
+
+/* Начертания шрифта */
+
+.weight-block {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.weight-content {
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #212121 0.11%, #272727 100.11%);
+    gap: 26px;
+    background-image: url('/assets/images/FontWeightBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.weight {
+    display: flex;
+    gap: 64px;
+}
+
+.weight > p {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 42px;
+    min-width: 208px;
+    text-align: center;
+
+}
+
+.weight > span {
+    font-size: 20px;
+    line-height: 120%;
+    border-bottom: 1px solid #434343;
+    padding-bottom: 5.48px;
+    margin-bottom: 20.52px;
+    width: max-content;
+}
+
+/* Шрифтовые пары */
+
+.pairs-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.pairs-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    height: 334px;
+}
+
+.pair {
+    width: 564px;
+}
+
+.pair > h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    width: max-content;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+    margin-bottom: 10px;
+}
+
+.pair > h4 {
+    font-size: 32px;
+    font-style: normal;
+    line-height: 120%;
+    margin-bottom: 4px;
+}
+
+.pair > p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+/* Демонстрация шрифта из жизни */
+
+.demo-block {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.demo-description {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.demo-description > p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    width: 994px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        padding: 20px 10px;
+    }
+
+    .Gg {
+        font-size: 80px;
+    }
+
+    .type,
+    .block-title {
+        font-size: 48px;
+    }
+
+    .info-text,
+    .info-semiBold-text {
+        font-size: 20px;
+    }
+
+    .secondary-text {
+        font-size: 28px;
+    }
+
+    .letter {
+        font-size: 140px;
+        line-height: 140px;
+    }
+
+    .heading-block > h1 {
+        font-size: 160px;
+    }
+
+    .block,
+    .history-block,
+    .weight-content {
+        gap: 20px;
+    }
+
+    .history-block {
+        gap: 48px;
+    }
+
+    .history-block > img {
+        width: 305px;
+    }
+
+    .typeface-block > img {
+        width: 385px;
+    }
+
+    .typeface-decoration > h2 {
+        font-size: 40px;
+    }
+
+    .weight-content {
+        padding: 30px 24px 24px;
+    }
+
+    .weight {
+        gap: 24px;
+        justify-content: space-between;
+    }
+
+    .weight > p {
+        min-width: 140px;
+    }
+
+    .weight > span {
+        padding-bottom: 4px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .weight > p,
+    .pair > h4 {
+        font-size: 24px;
+    }
+
+    .examples {
+        padding: 30px 0 24px;
+    }
+
+    .examples > span {
+        padding-bottom: 4px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        width: fit-content;
+    }
+
+    .pairs-content {
+        gap: 24px;
+    }
+
+    .pair {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .pair > h3 {
+        font-size: 30px;
+    }
+
+    .pair > p,
+    .demo-description > p,
+    .block-text {
+        font-size: 16px;
+    }
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .wrapper {
+        gap: 70px;
+        padding: 20px;
+    }
+
+    .type,
+    .secondary-text,
+    .typeface-decoration > img,
+    .demo-description > img {
+        display: none;
+    }
+
+    .Gg {
+        font-size: 60px;
+    }
+
+    .info-text,
+    .info-semiBold-text {
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+
+    .info-text {
+        max-width: 187px;
+    }
+
+    .info-semiBold-text {
+        max-width: 141px;
+    }
+
+    .letter {
+        font-size: 100px;
+        line-height: normal;
+    }
+
+    .heading-block > h1 {
+        font-size: 72px;
+        margin-top: 20px;
+    }
+
+    .heading-block > h2 {
+        font-size: 24px;
+    }
+
+    .introduction-block {
+        display: flex;
+        flex-direction: column;
+        gap: 133px;
+    }
+
+    .history-block {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .history-block img {
+        width: 100%;
+    }
+
+    .block {
+        gap: 16px;
+    }
+
+    .block-text {
+        border-bottom: none;
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+
+    .block-title {
+        font-size: 32px;
+        line-height: 33.6px;
+    }
+
+    .typeface-block {
+        flex-direction: column-reverse;
+    }
+
+    .typeface-block > img,
+    .typeface {
+        width: auto;
+    }
+
+    .typeface-decoration > h2 {
+        font-size: 63px;
+    }
+
+    .weight-content {
+        background-image: none;
+        padding: 0;
+    }
+
+    .weight {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .weight > p {
+        font-size: 26px;
+        text-align: left;
+        min-width: max-content;
+    }
+
+    .weight > span {
+        font-size: 16px;
+        width: auto;
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .pairs-content {
+        height: auto;
+    }
+
+    .pair {
+        width: auto;
+    }
+
+    .pair > h3 {
+        font-size: 30px;
+    }
+
+    .pair > h4 {
+        font-size: 28px;
+    }
+}
