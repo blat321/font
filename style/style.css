@@ -208,7 +208,7 @@ body {
     flex-direction: column;
     padding: 48px;
     border-radius: 12px;
-    background: linear-gradient(180deg, #212121 0.11%, #272727 100.11%);
+    background: #999999;
     gap: 26px;
     background-image: url('/assets/images/FontWeightBg.png');
     background-repeat: no-repeat;
